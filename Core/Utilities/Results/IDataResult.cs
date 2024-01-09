@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Entities
+namespace Core.Utilities.Results
 {
-    public interface IDto
+    public interface IDataResult<T> : IResult
     {
+        T Data { get; }
+        
     }
 }
